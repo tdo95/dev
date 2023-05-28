@@ -1,0 +1,1 @@
+This repository is a place where I practice different concepts and store projects.
