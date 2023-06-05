@@ -8,8 +8,14 @@
 
 
 function fizzBuzz(n) {
-    // Code goes here
+    for (let i = 1; i <= n; i++) {
+        let output = ""
+        if (i % 3 === 0) output += 'Fizz'
+        if (i % 5 === 0) output += 'Buzz'
+        if (!output) output = i
+        console.log(output)
+    }
 }
 
-
+console.log(fizzBuzz(15))
 module.exports = fizzBuzz

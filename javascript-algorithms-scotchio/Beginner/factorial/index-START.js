@@ -16,4 +16,6 @@ function factorial(n, memo) {
     return memo[n] = n * factorial(n - 1, memo)
 }
 
+console.log(factorial(5))
+
 module.exports = factorial

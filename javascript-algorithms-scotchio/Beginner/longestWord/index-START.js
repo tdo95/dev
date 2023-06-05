@@ -6,7 +6,9 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 
 
 function longestWord(text) {
-    // Code goes here
+    // return text.split(' ').sort((a,b) => b.length - a.length)[0]
+
+    return text.split(' ').reduce((longest, current) => current.length > longest.length ? current : longest , '')
 }
 
 

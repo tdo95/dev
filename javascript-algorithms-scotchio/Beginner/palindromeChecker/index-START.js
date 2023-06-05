@@ -7,7 +7,10 @@ e.g palindromeChecker('racecar') // will return true
 
 
 function palindromeChecker(text) {
-    v// Code goes here
+    //reverse text
+    let reversed = text.LowerCase().split('').reverse().join('')
+    //check if reverse version is the same as regular
+    return reversed === text
 }
 
 

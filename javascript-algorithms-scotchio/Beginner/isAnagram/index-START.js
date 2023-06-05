@@ -8,7 +8,13 @@ don't. E.g
 
 
 function isAnagram(stringA, stringB) {
-    // Code goes here
+    const sortedA = stringA.split('').sort().join('')
+    const sortedB = stringB.split('').sort().join('')
+
+    return sortedA === sortedB
+
+
+    //Alternative you can create a map counting the character amount in each string then compare each value, any value is not the same return false, else return true
 }
 
 

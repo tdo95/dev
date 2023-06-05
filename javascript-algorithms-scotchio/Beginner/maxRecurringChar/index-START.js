@@ -6,7 +6,27 @@ e.g maxRecurringChar('aabacada') // will return 'a'
 
 
 function maxRecurringChar(text) {
-    // Code goes here
+    //count chars in string
+    const charCountMap = {}
+    for (let char of text) {
+        //add count to existing
+        if (charCountMap[char])
+            charCountMap[char] += 1
+        //create property add one
+        else charCountMap[char] = 1   
+    }
+    let largestValue = 0
+    let largestLetter = ''
+    //find largest value in map
+    for (let char in charCountMap)
+        if (charCountMap[char] > largestValue) {
+            largestValue = charCountMap[char]
+            largestLetter = char
+        }
+    return largestLetter
+
+    
+
 }
 
 

@@ -14,7 +14,7 @@ function mergeArrays(...arrays) {
 
     return [...new Set([...jointArray])]
 
-    
+    //alternatively insead of set you could use filter or reduce, filter is the fastest
 }
 
 

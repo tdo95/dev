@@ -5,8 +5,24 @@
 */
 
 function chunkArray(array, size) {
-    // Code goes here
+    const chunks = []
+
+    // for (let i = 0; i < array.length; i += size) {
+    //     chunks.push(array.slice(i, i+size))
+    // }
+    // return chunks
+
+    let result = []
+    for (value of array){
+        let lastArray = result[result.length -1 ]
+        if(!lastArray || lastArray.length == size){
+            result.push([value])
+        } else{
+            lastArray.push(value)
+        }
+    }
+    return result
 }
 
-
+// console.log(chunkArray([2,1,2,2,1], 4))
 module.exports = chunkArray

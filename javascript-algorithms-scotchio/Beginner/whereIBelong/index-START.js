@@ -10,8 +10,9 @@ than 1(index 0), but less than 2(index 1).
 
 
 function whereIBelong(arr, num) {
-   // Code goes here
+   return arr.length ? arr.sort((a,b) => a - b).findIndex(value => value >= num) : 0
 
+   //the best solution here is to use a forloop to count the smaller values
 }
 
 
